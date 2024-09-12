@@ -39,8 +39,12 @@ a {
     text-decoration:none;
     color: #f7dbdb;
 }
-nav a:hover {
+nav a:hover, button:hover {
     color:#e4572e;
+}
+nav li:active, button:active {
+    box-shadow: 0px 0px 2px;
+    transform: translateY(2px);
 }
 
 h1, h2 {
@@ -68,5 +72,20 @@ i {
     grid-template-columns: 100px 100px 100px 100px;
     text-align: center;
     vertical-align:center;
+}
+ul {
+    list-style-type: disclosure-closed;
+}
+button {
+    background: #2e282a;
+    border: none;
+    color: #f7dbdb;
+    box-shadow: 1px 1px 2px #f7dbdb;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin:10px;
+}
+.project-img {
+    display:none;
 }
 

@@ -66,4 +66,7 @@ i {
 .gridin {
     display:grid;
     grid-template-columns: 100px 100px 100px 100px;
+    text-align: center;
+    vertical-align:center;
 }
+

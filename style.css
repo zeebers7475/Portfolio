@@ -60,3 +60,10 @@ h1, h2 {
 figcaption {
     text-align: center;
 }
+i {
+    font-size:50px;
+}
+.gridin {
+    display:grid;
+    grid-template-columns: 100px 100px 100px 100px;
+}

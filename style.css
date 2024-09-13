@@ -1,10 +1,16 @@
+html {
+    scroll-behavior: smooth;
+  }
 body {
     background-color:#2e282a;
     color:#eedbdb;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    line-height: 1.4;
+    font-size: 1em;
 }
 
 main {
-    width:85%;
+    width:75%;
     margin:auto;
 }
 header {
@@ -25,6 +31,7 @@ header h1 {
 }
 nav {
     padding-right:50px;
+    font-family:'Courier New', Courier, monospace;
 }
 nav ul {
     display:inline-flex;
@@ -37,7 +44,8 @@ nav ul li {
 }
 a {
     text-decoration:none;
-    color: #f7dbdb;
+    color: #ffecec;
+    font-weight: bold;
 }
 nav a:hover, button:hover {
     color:#e4572e;
@@ -48,30 +56,22 @@ nav li:active, button:active {
 }
 
 h1, h2 {
+    font-family:'Courier New', Courier, monospace;
     color:#e4572e;
 }
 
-.flexin {
+#about .flexin {
     display:flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items:center;
     gap: 50px;
 }
-.flexin img {
+#about img {
     width:280px;
 }
 figcaption {
     text-align: center;
-}
-i {
-    font-size:50px;
-}
-.gridin {
-    display:grid;
-    grid-template-columns: 100px 100px 100px 100px;
-    text-align: center;
-    vertical-align:center;
 }
 ul {
     list-style-type: disclosure-closed;
@@ -84,8 +84,75 @@ button {
     padding: 5px 10px;
     cursor: pointer;
     margin:10px;
+    font-size:1em;
 }
-.project-img {
+.toggle {
     display:none;
+    height:500px;
+    overflow:auto;
 }
+#projects img {
+    width:75%;
+}
+#skills .flexin {
+    display:flex;
+    flex-direction:row;
+    justify-content:flex-start;
+    align-items: center;
+}
+i {
+    font-size:50px;
+    margin:10px;
+}
+.gridin {
+    display:grid;
+    grid-template-columns: 100px 100px 100px 100px;
+    text-align: center;
+    vertical-align:center;
+}
+
+@media only screen and (max-width:780px) {
+    body {
+        font-size:1.05em;
+    }
+    header {
+        flex-direction: column;
+        position: sticky;
+        top: -85px;
+        background-color: #2d282a;
+        box-shadow: none;
+    }
+    header div {
+        margin: 10px 0;
+    }
+    header h1 {
+        font-size:1.8em;
+    }
+    nav, nav ul {
+        padding:0;
+    }
+    nav ul li {
+        margin:4px;
+        padding: 2px 5px;
+    }
+    main {
+        width:95%;
+    }
+    #about h2 {
+        text-align: center;
+    }
+    #about .flexin {
+        flex-direction:column-reverse;
+        gap:20px;
+    }
+    .toggle {
+        display:none;
+        height:100px;
+        overflow:auto;
+    }
+    #contact .gridin {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
 

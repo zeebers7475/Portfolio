@@ -1,5 +1,7 @@
 const buttons = document.querySelectorAll('button');
 
+let Websitedata = "Hello World";
+
 const toggleImage = (event) => {
     let button = event.target;
     let imageId = button.getAttribute('data-image-id');
